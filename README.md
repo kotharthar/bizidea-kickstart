@@ -9,7 +9,7 @@ At every step, a generative persona produces work and an adversarial persona str
 In Claude Code:
 
 ```
-/plugin marketplace add tharhtet/bizidea-kickstart
+/plugin marketplace add kotharthar/bizidea-kickstart
 /plugin install bizidea-kickstart@tharhtet-skills
 ```
 
