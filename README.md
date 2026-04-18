@@ -150,7 +150,7 @@ claude plugin validate ./plugins/bizidea-kickstart
 - Rob Fitzpatrick, *The Mom Test*
 - Alex Osterwalder & Yves Pigneur, *Business Model Generation* / *Value Proposition Design*
 
-Derived from Thar Htet's 6-week business idea hackathon curriculum for undergraduate students in Myanmar (Feb–Mar 2026).
+Derived from 6-week business idea hackathon curriculum for undergraduate students in Myanmar (Feb–Mar 2026). This workshop series is designed as an entrepreneurial flight simulator. The goal is was merely to "use AI," but to experience the full lifecycle of a startup—from a raw spark of an idea to a validated, high-fidelity pitch—using AI as a force multiplier. By offloading 80% of the manual "grunt work" to agentic tools, students can spend their energy on high-level strategic thinking and customer empathy.
 
 ## License
 
