@@ -1,0 +1,22 @@
+{
+  "name": "bizidea-kickstart",
+  "description": "Guides a solo founder from raw idea to investor-ready pitch in 12 sequential steps, grounded in Customer Development, Lean Startup, The Mom Test, Divergent/Convergent thinking, and the Business Model Canvas. Invokes critical AI personas (Cynical VC, Mom Test Coach, Industry Veteran, Cynical CFO, Investor in Seat 3) that stress-test every deliverable.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Thar Htet"
+  },
+  "homepage": "https://github.com/tharhtet/bizidea-kickstart",
+  "repository": "https://github.com/tharhtet/bizidea-kickstart",
+  "license": "MIT",
+  "keywords": [
+    "startup",
+    "pitch-deck",
+    "mvp",
+    "business-idea",
+    "hackathon",
+    "lean-startup",
+    "customer-development",
+    "business-model-canvas",
+    "mom-test"
+  ]
+}

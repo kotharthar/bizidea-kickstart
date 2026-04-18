@@ -1,0 +1,33 @@
+# state.yaml schema for a bizidea-kickstart project
+# This file documents the shape of ./<idea-slug>/state.yaml that the skill reads and writes.
+# It is NOT consumed programmatically — it exists as a reference for skill maintainers
+# and for Claude when reasoning about state.
+
+idea_name: string            # human-readable name, e.g. "Forecast for Coffee Shops"
+idea_slug: string            # folder-safe slug, e.g. "forecast-coffee-shops"
+created_at: ISO-8601 string  # when init.sh scaffolded the project
+updated_at: ISO-8601 string  # last time any step wrote state
+
+current_step: integer        # 0 before step 01 runs; equals last completed step number
+last_completed_step: integer # same as current_step; kept explicit for readability
+
+steps:                       # one entry per step, even if not yet run
+  "01":
+    name: "Problem Hunt"
+    status: pending | in_progress | complete | skipped
+    deliverables:            # list of files this step wrote, relative to idea folder
+      - "01-problem-hunt/bleeding-neck-report.md"
+    notes: string (optional) # short free-form note the user or Claude may append
+  "02":
+    name: "Persona & Mom Test"
+    status: pending
+    deliverables: []
+  # ... through "12"
+
+# Notes on usage:
+# - Claude MUST update status to 'in_progress' before invoking personas, and 'complete'
+#   after writing deliverables successfully.
+# - If a step is re-run, its previous deliverables are archived to NN-*/archive/<timestamp>/
+#   rather than overwritten silently.
+# - Status 'skipped' is valid only when the user explicitly asks to skip (e.g., bringing
+#   their own BMC). The skill warns but honors the request.

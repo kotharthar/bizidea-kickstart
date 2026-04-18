@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local test projects (users scaffold these in their own working dirs)
+test-*/
+scratch/
+*.test/
+
+# Any archived previous versions
+*.tar.gz
+*.zip
+!plugins/*/assets/*.zip
+
+# Claude Code local state (not to be committed)
+.claude/
+.claude-local/
+
+# Python scratch
+__pycache__/
+*.pyc
